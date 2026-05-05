@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
+set -e
+
+: ${DOC_IMG:=containthedocs:latest}
+
 set -x
 
-COMMAND=(/bin/bash -c "sudo pip install -r requirements.txt -U ; make -C docs clean html")
+COMMAND=(/bin/bash -c "pip install -r requirements.txt ; make -C docs clean html")
 
 . ./containthedocs-image
 

@@ -1,8 +1,10 @@
+docutils>=0.18.1,<=0.19
 f5_sphinx_theme
+gitpython
+myst-parser
 pre-commit
-recommonmark
-sphinx
+setuptools
+sphinx>=7.0,<8.0
 sphinx-copybutton
-sphinxcontrib-blockdiag
-sphinxcontrib-nwdiag
+sphinxcontrib-mermaid
 sphinxcontrib-serializinghtml
